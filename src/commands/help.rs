@@ -2,13 +2,13 @@ use crate::Command;
 
 
 #[dervie(Debug, Command)]
-struct HelpCommand {
+struct Help {
   command: String,
   args: Vec<String>,
 }
 
 
-impl Command for HelpCommand {
+impl Command for Help {
 
   fn new(command: String, args: Vec<String>) -> HelpCommand {
     return HelpCommand{ command, args };
