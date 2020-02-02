@@ -9,13 +9,12 @@
     <a href="#"> Quick Start </a> <span>|</span>
     <a href="#"> Demos </a>
   </h3>
-
-  <sub>Built using Rust and Love 🦀❤️ </sub>
+  <sub>Built with Rust-lang and Love 🦀❤️ </sub>
 </div>
 
 ## Table of Contents
 - [Install](#)
-- [Quiclstart](#)
+- [Quickstart](#)
 - [Tutorials](#)
 - [Themes](#)
 - [Demo](#)
