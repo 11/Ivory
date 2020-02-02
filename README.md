@@ -15,7 +15,10 @@
 
 ## Table of Contents
 - [Install](#)
+- [Quiclstart](#)
+- [Tutorials](#)
 - [Themes](#)
+- [Demo](#)
 - [Documentation](#)
 - [About](#)
 
@@ -23,7 +26,16 @@
 ## Install
 
 
+## Quickstart
+
+
+## Tutorials
+
+
 ## Themes
+
+
+## Demo
 
 
 ## Documentation
