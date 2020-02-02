@@ -15,24 +15,21 @@
 </div>
 
 
-### Table of Contents
-  - [Install](#)
-  - [Getting Started](#)
-  - [Themes](#)
-  - [Documentation](#)
-  - [About](#)
+## Table of Contents
+- [Install](#)
+- [Quickstart](#)
+- [Tutorials](#)
+- [Themes](#)
+- [Demo](#)
+- [Documentation](#)
+- [About](#)
 
 
 ## Install
-
-
 ## Getting Started
-
-
+## Quickstart
+## Tutorials
 ## Themes
-
-
+## Demo
 ## Documentation
-
-
-
+## About
