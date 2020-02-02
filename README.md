@@ -1,13 +1,12 @@
 <div align="center">
-
-  <h1>Ivory</h1>
+  <h1> Oxygen </h1>
   <p>
     <strong> Your favorite and fastest static site generator </strong>
   </p>
 
   <h3>
-    <a href="#"> Docs </a> <span>| </span>
-    <a href="#"> Quick Start </a> <span>| </span>
+    <a href="#"> Docs </a> <span>|</span>
+    <a href="#"> Quick Start </a> <span>|</span>
     <a href="#"> Demos </a>
   </h3>
 
@@ -15,6 +14,19 @@
 </div>
 
 ## Table of Contents
-## Demo
+- [Install](#)
+- [Themes](#)
+- [Documentation](#)
+- [About](#)
+
+
+## Install
+
+
+## Themes
+
+
+## Documentation
+
+
 ## About
-## Contributing
