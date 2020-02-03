@@ -17,7 +17,7 @@ pub trait Command {
 }
 
 
-pub fn parse_commands() {
+pub fn parse_command() {
   // command line arguments
   let mut cmds: Vec<String> = env::args().collect();
 
