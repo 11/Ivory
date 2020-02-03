@@ -2,10 +2,11 @@ use super::command::Command;
 
 #[derive(Debug)]
 pub struct Help {
-  command: String,
-  args: Vec<String>,
+  pub command: String,
+  pub args: Vec<String>,
 }
 
+impl Help {}
 
 impl Command for Help {
 
@@ -14,6 +15,10 @@ impl Command for Help {
   }
 
   fn validate(&self) -> bool {
+    if self.args.len() != 0 {
+      return false;
+    }
+
     return true;
   }
 
@@ -25,9 +30,10 @@ impl Command for Help {
       "oxy build -- generates project for production environment\n",
       "oxy serve -- start local server, and open project from last build\n",
       "oxy run   -- runs `oxy build` & `oxy serve`\n",
-      " oxy      -- random fun message\n",
+      "oxy      -- random fun message\n",
     );
 
     println!("{}", commands);
   }
+
 }
