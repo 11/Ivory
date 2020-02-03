@@ -1,5 +1,5 @@
 [package]
-name = "Ivory"
+name = "oxygen"
 version = "0.1.0"
 authors = ["Douglas Rudolph <drudolph914@gmail.com>"]
 edition = "2018"

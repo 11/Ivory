@@ -1,8 +1,7 @@
-use crate::Command;
+use super::command::Command;
 
-
-#[dervie(Debug, Command)]
-struct Help {
+#[derive(Debug)]
+pub struct Help {
   command: String,
   args: Vec<String>,
 }
@@ -10,8 +9,8 @@ struct Help {
 
 impl Command for Help {
 
-  fn new(command: String, args: Vec<String>) -> HelpCommand {
-    return HelpCommand{ command, args };
+  fn new(command: String, args: Vec<String>) -> Help{
+    return Help { command, args };
   }
 
   fn validate(&self) -> bool {
@@ -31,5 +30,4 @@ impl Command for Help {
 
     println!("{}", commands);
   }
-
 }
