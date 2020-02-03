@@ -6,14 +6,13 @@ pub struct Help {
   pub args: Vec<String>,
 }
 
-impl Help {}
-
-impl Command for Help {
-
-  fn new(command: String, args: Vec<String>) -> Help{
+impl Help {
+  pub fn new(command: String, args: Vec<String>) -> Help{
     return Help { command, args };
   }
+}
 
+impl Command for Help {
   fn validate(&self) -> bool {
     if self.args.len() != 0 {
       return false;
