@@ -28,21 +28,29 @@ pub fn parse_command() {
   let oxy_cmd: String = oxy_input.remove(0);
   let oxy_args: Vec<String> = oxy_input;
 
-  let cmd = match oxy_cmd.as_str() {
-    "new"   => None,
-    "init"  => None,
+  let cmd_opt = match oxy_cmd.as_str() {
+    "new" => None,
+    "init" => None,
     "build" => None,
     "serve" => None,
-    "run"   => None,
-    "help"  => Some(Box::new(Help::new(oxy_cmd, oxy_args))),
-    _       => None,
+    "run" => None,
+    "help" => {
+      Some(Box::new(
+        Help::new(
+          oxy_cmd.as_str(),
+          oxy_args.iter().map(AsRef::as_ref).collect()
+        )
+      ))
+    },
+
+    _ => None,
   };
 
-  if let Some(Command) = cmd {
-    let is_valid_cmd = cmd.unwrap().validate();
-
-    if is_valid_cmd {
-      cmd.unwrap().run();
+  if !cmd_opt.is_none() {
+    let cmd = cmd_opt.unwrap();
+    let valid_cmd = cmd.validate();
+    if valid_cmd {
+      cmd.run();
     }
   }
 

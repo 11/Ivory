@@ -1,18 +1,18 @@
 use super::command::Command;
 
 #[derive(Debug)]
-pub struct Help {
-  pub command: String,
-  pub args: Vec<String>,
+pub struct Help<'a> {
+  pub command: &'a str,
+  pub args: Vec<&'a str>,
 }
 
-impl Help {
-  pub fn new(command: String, args: Vec<String>) -> Help{
+impl <'a> Help<'a> {
+  pub fn new(command: &'a str, args: Vec<&'a str>) -> Help<'a> {
     return Help { command, args };
   }
 }
 
-impl Command for Help {
+impl Command for Help <'_> {
   fn validate(&self) -> bool {
     if self.args.len() != 0 {
       return false;
