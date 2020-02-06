@@ -23,13 +23,11 @@ impl Command for Help <'_> {
 
   fn run(&self) {
     let commands = concat!(
-      "oxy new [PATH] -- takes a path to where a new projcet should be built\n",
-      "oxy help  -- display help screen\n",
-      "oxy init  -- creates project in current folder\n",
-      "oxy build -- generates project for production environment\n",
-      "oxy serve -- start local server, and open project from last build\n",
-      "oxy run   -- runs `oxy build` & `oxy serve`\n",
-      "oxy      -- random fun message\n",
+      "oxy new [PATH] -- Takes a path to where a new projcet should be built\n",
+      "oxy init  -- Creates project in current folder\n",
+      "oxy build -- Generates project for production environment\n",
+      "oxy serve -- Start local server and open project from last build\n",
+      "oxy run   -- Runs `oxy build` & `oxy serve`\n",
     );
 
     println!("{}", commands);
