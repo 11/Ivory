@@ -29,7 +29,7 @@ struct Lexer {
 }
 
 impl Lexer {
-  fn new(text: String, position: i32, current_char: Option<char>) -> Lexer {
+  fn new(text: String, position: i32) -> Lexer {
     return Lexer {text, position };
   }
 
